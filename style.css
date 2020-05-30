@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(270deg, #6805f2, #05f29b);
+}
+
+.container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  margin: 0 5% 0 5%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px 5px rgba(97, 90, 90, 0.2);
+  background-image: linear-gradient(-40deg, #6f04d9, #8854bd);
+  overflow: hidden;
+}
+
+.card .card-top {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 400px;
+  height: 90px;
+  background-image: linear-gradient(40deg, #f2cb05, #b6a346);
+  animation: dsTop 2s;
+}
+
+.card .avatar-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  top: -35px;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 70px;
+  border-radius: 12px;
+  background-image: linear-gradient(50deg, #05f29b, #4ac095);
+  overflow: hidden;
+  animation: mvTop 2s;
+}
+
+.card .avatar-holder h3 {
+  color: rgb(99, 107, 107);
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.card-0 {
+  animation: cardToButtom 1.5s;
+}
+
+.card-1 {
+  animation: cardToTop 1.5s;
+}
+
+.score {
+  margin-bottom: 5%;
+  font-weight: 500;
+  font-size: 120px;
+  text-align: center;
+}
+
+.current-score-box {
+  margin: 2% auto 0 auto;
+  text-align: center;
+  width: 200px;
+  height: 85px;
+  border-radius: 10px;
+  background-image: linear-gradient(40deg, #f2cb05, #b6a346);
+}
+
+.current-score-label {
+  margin: 10px auto 0 auto;
+  font-size: 20px;
+}
+
+.current-score {
+  margin: 10px auto 0 auto;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+button {
+  position: relative;
+  background-image: linear-gradient(-40deg, #05f29b, rgb(12, 151, 100));
+  border: none;
+  padding: 12px 16px;
+  font-weight: lighter;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  width: 200px;
+  border-radius: 12px;
+}
+
+button:hover {
+  font-weight: 600;
+}
+button:hover i {
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+i {
+  color: #f2cb05;
+  margin-right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  margin-top: -4px;
+  transition: margin 0.3s;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  height: 100px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.slide-bottom {
+  animation: slide-bottom 0.5s;
+}
+
+.active-player {
+  background-image: linear-gradient(-40deg, #05f29b, rgb(12, 151, 100));
+}
+
+.winner-player {
+  background-image: linear-gradient(-40deg, #f2cb05, rgb(168, 196, 12));
+}
+
+.image1 {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.slide-top-1 {
+  animation: slide-top-1 2s;
+}
+
+.slide-top-2 {
+  animation: slide-top-2 2s;
+}
+
+.slide-top-3 {
+  animation: slide-top-3 2s;
+}
+/**********************
+keyframes 
+**********************/
+
+@keyframes dsTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes mvTop {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: -35px;
+  }
+}
+
+@keyframes cardToButtom {
+  0% {
+    top: -250px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes cardToTop {
+  0% {
+    top: 250px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ----------------------------------------------
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@keyframes slide-bottom {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 120px;
+  }
+}
+
+/* ----------------------------------------------
+ * ----------------------------------------
+ * animation slide-top buttons
+ * ----------------------------------------
+ */
+@keyframes slide-top-1 {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes slide-top-2 {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes slide-top-3 {
+  0% {
+    bottom: -300px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}

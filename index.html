@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Pig Game V1.0</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="card-0" class="card card-0 active-player">
+        <div class="card-top"></div>
+        <div class="avatar-holder">
+          <h3 id="player-0">Player 0</h3>
+        </div>
+        <div>
+          <div id="score-0" class="score">80</div>
+          <div class="current-score-box">
+            <div class="current-score-label">
+              CURRENT
+            </div>
+            <div id="current-score-0" class="current-score">
+              12
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="btn-new-game" class="slide-top-1">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          NEW GAME
+        </button>
+        <button id="btn-roll-dice" class="slide-top-2">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+          ROLL DICE
+        </button>
+        <button id="btn-hold" class="slide-top-3">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          HOLD
+        </button>
+      </div>
+
+      <div id="dices">
+        <img
+          id="dice-image"
+          src="./assets/dice-2.png"
+          alt="dice"
+          class="dice slide-bottom image1"
+        />
+      </div>
+
+      <div id="card-1" class="card card-1">
+        <div class="card-top"></div>
+        <div class="avatar-holder">
+          <h3 id="player-1">Player 1</h3>
+        </div>
+        <div>
+          <div id="score-1" class="score">55</div>
+          <div class="current-score-box">
+            <div class="current-score-label">
+              CURRENT
+            </div>
+            <div id="current-score-1" class="current-score">
+              16
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
